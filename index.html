@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Maithili Land and Developers - Real Estate in Nagpur. 1BHK, 2BHK, 3BHK Flats & Plots for Sale & Rent. Contact us!">
+<title>Maithili Land and Developers | Nagpur Properties</title>
+<style>
+/* ==== CSS START ==== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+:root{--primary:#ff6f61;--secondary:#4caf50;--bg:#fefefe;--text:#333;}
+body{background:var(--bg);color:var(--text);}
+header,nav,section,footer{padding:20px;margin:auto;max-width:1200px;}
+h1,h2,h3{color:var(--primary);}
+header{display:flex;align-items:center;justify-content:space-between;background:var(--secondary);color:#fff;padding:15px;border-radius:10px;flex-wrap:wrap;}
+header img{width:120px;border-radius:10px;}
+header .contact-btns button{margin:5px;padding:10px 15px;border:none;border-radius:5px;cursor:pointer;color:#fff;background:#ff5722;transition:.3s;}
+header .contact-btns button:hover{background:#e64a19;}
+nav ul{list-style:none;display:flex;gap:20px;justify-content:center;margin:15px 0;flex-wrap:wrap;}
+nav ul li a{text-decoration:none;color:var(--primary);font-weight:bold;}
+nav ul li a:hover{color:var(--secondary);}
+section{margin:30px 0;padding:20px;background:#fff;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1);}
+.project-list{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.project-item{border:1px solid #ccc;border-radius:10px;overflow:hidden;width:300px;background:#fafafa;transition:.3s;}
+.project-item:hover{transform:scale(1.03);box-shadow:0 0 15px rgba(0,0,0,.2);}
+.project-item img{width:100%;height:200px;object-fit:cover;}
+.project-item h3{padding:10px;color:var(--primary);}
+.project-item p{padding:0 10px 10px 10px;}
+.button{padding:10px 15px;margin:5px;background:var(--primary);color:#fff;border:none;border-radius:5px;cursor:pointer;transition:.3s;text-decoration:none;display:inline-block;}
+.button:hover{background:var(--secondary);}
+form input,form select,form textarea{width:100%;padding:10px;margin:5px 0;border-radius:5px;border:1px solid #ccc;}
+form button{margin-top:10px;}
+footer{text-align:center;background:#333;color:#fff;padding:20px;border-radius:10px;margin-top:30px;}
+footer a{color:#ff6f61;text-decoration:none;}
+footer a:hover{color:#4caf50;}
+.slider{display:flex;overflow-x:auto;gap:10px;padding:10px 0;}
+.slider img{width:300px;height:200px;object-fit:cover;border-radius:10px;flex-shrink:0;transition:.3s;}
+.slider img:hover{transform:scale(1.05);}
+@media(max-width:768px){.project-item{width:90%;}header{flex-direction:column;text-align:center;}}
+/* ==== CSS END ==== */
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="logo.png" alt="Logo">
+  <div>
+    <h1>Maithili Land and Developers</h1>
+    <div class="contact-btns">
+      <button onclick="window.location.href='tel:8850114073'">Call</button>
+      <button onclick="window.location.href='mailto:maithililandanddevelopers@gmail.com'">Mail</button>
+      <button onclick="window.open('https://wa.me/918850114073','_blank')">WhatsApp</button>
+      <button onclick="window.open('https://www.instagram.com/','_blank')">Instagram</button>
+      <button onclick="window.open('https://www.youtube.com/','_blank')">YouTube</button>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Properties</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>Trusted real estate company in Nagpur. 1BHK, 2BHK, 3BHK Flats & Plots for Sale/Rent. Explore our properties today!</p>
+</section>
+
+<!-- PROPERTIES -->
+<section id="projects">
+  <h2>Our Properties</h2>
+  <div class="project-list">
+    <div class="project-item">
+      <img src="flat1.jpg" alt="1BHK">
+      <h3>1BHK Flat - Sale</h3>
+      <p>Somalwada, Nagpur</p>
+      <a class="button" href="#">View Details</a>
+    </div>
+    <div class="project-item">
+      <img src="flat2.jpg" alt="2BHK">
+      <h3>2BHK Flat - Rent</h3>
+      <p>Manish Nagar, Nagpur</p>
+      <a class="button" href="#">View Details</a>
+    </div>
+    <div class="project-item">
+      <img src="plot1.jpg" alt="Plot">
+      <h3>Plot - Sale</h3>
+      <p>Nagpur</p>
+      <a class="button" href="#">View Details</a>
+    </div>
+  </div>
+  <div class="slider">
+    <img src="flat1.jpg" alt="Flat1">
+    <img src="flat2.jpg" alt="Flat2">
+    <img src="flat3.jpg" alt="Flat3">
+    <img src="plot1.jpg" alt="Plot1">
+  </div>
+</section>
+
+<!-- REQUIREMENTS FORM -->
+<section id="requirements">
+  <h2>Submit Your Requirement</h2>
+  <form onsubmit="alert('Requirement Submitted!'); return false;">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Mobile" required>
+    <select required>
+      <option value="">Select Property Type</option>
+      <option value="1BHK">1BHK</option>
+      <option value="2BHK">2BHK</option>
+      <option value="3BHK">3BHK</option>
+      <option value="Plot">Plot</option>
+    </select>
+    <select required>
+      <option value="">For Sale/Rent</option>
+      <option value="Sale">Sale</option>
+      <option value="Rent">Rent</option>
+    </select>
+    <textarea placeholder="Comment"></textarea>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <h2>Our Location</h2>
+  <iframe src="https://www.google.com/maps?q=205+Gajanan+Apartments+Behind+Amrut+Loan+Somalwada+Manish+Nagar+Nagpur&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Maithili Land and Developers. All Rights Reserved.</p>
+  <p>Follow us: <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+</footer>
+
+<!-- JS -->
+<script>
+// Visitor Tracking
+let visits = localStorage.getItem('visits') || 0;
+visits++;
+localStorage.setItem('visits', visits);
+console.log('Total Visits:', visits);
+</script>
+</body>
+    </html>
